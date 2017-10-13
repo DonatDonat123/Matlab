@@ -1,3 +1,6 @@
+clear all
+close all
+
 %% PART 1
 % Test Sphere Function --> Works
 r1 = [0 2; 3 -4]
