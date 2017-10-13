@@ -9,7 +9,12 @@ volumes3 = Sphere_volume(r3)
 
 %% PART 2 UNITS in km and km^3
 % Calculate Volume of Troposphere
-r_earth = 6370
-r_trop = r_earth + 15
-V_earth = Sphere_volume(r_earth)
-V_trop = Sphere_volume(r_trop) - V_earth
+r_earth = 6370;
+r_trop = r_earth + 15;
+V_earth = Sphere_volume(r_earth); % 1.083E^12 km^3
+V_trop = Sphere_volume(r_trop) - V_earth; % 7.666E^9 km^3
+
+%% PART 3
+heights = [15, 50, 80, 110]
+[V_earth, V_layers] = Sphere_layer_volume(r_earth, heights) % Gives the correct output
+
