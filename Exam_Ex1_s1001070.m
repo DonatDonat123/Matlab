@@ -1,0 +1,15 @@
+%% PART 1
+% Test Sphere Function --> Works
+r1 = [0 2; 3 -4]
+r2 = [1 2]
+r3 = 3
+volumes1 = Sphere_volume(r1)
+volumes2 = Sphere_volume(r2)
+volumes3 = Sphere_volume(r3)
+
+%% PART 2 UNITS in km and km^3
+% Calculate Volume of Troposphere
+r_earth = 6370
+r_trop = r_earth + 15
+V_earth = Sphere_volume(r_earth)
+V_trop = Sphere_volume(r_trop) - V_earth

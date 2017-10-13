@@ -2,13 +2,15 @@
 
 clear all
 close all
-%x=	[-1,	2,	2,	1,	2,	0,	2,	-3,	2,	1,	2,	3,	-1];	
-%y=	[2,	-1,	2,	0,	0,	1,	3,	2,	-1,	0,	1,	3,	1];	
+x=	[-1,	2,	2,	1,	2,	0,	2,	-3,	2,	1,	2,	3,	-1];	
+y=	[2,	-1,	2,	0,	0,	1,	3,	2,	-1,	0,	1,	3,	1];	
 
 %plot_shots(x,y)
 %centers = [0,0; 0,0; 0,0; 0,0]
 %radii = [2,4,6,8]
 %viscircles(centers, radii)
+
+[midpoint, d] = plot_spread(x,y)
 
 % TEIL 2
 
